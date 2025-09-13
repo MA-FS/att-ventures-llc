@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service — ATT Ventures LLC</title>
+    <meta name="description" content="Terms of Service for ATT Ventures LLC. Review the terms and conditions governing your use of our website and services.">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://attventuresllc.com/terms.html">
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#0f172a">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Terms of Service — ATT Ventures LLC">
+    <meta property="og:description" content="Terms of Service for ATT Ventures LLC. Review the terms and conditions governing your use of our website and services.">
+    <meta property="og:url" content="https://attventuresllc.com/terms.html">
+    
+    <!-- Favicon (inline SVG data URL) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23374151'><path d='M12 2L1 21h22L12 2zm0 4.2L19.6 19H4.4L12 6.2z'/></svg>">
+    
+    <!-- JSON-LD Organization Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "ATT Ventures LLC",
+      "url": "https://attventuresllc.com/",
+      "email": "info@attventuresllc.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Sheridan",
+        "addressRegion": "WY",
+        "addressCountry": "US"
+      },
+      "sameAs": []
+    }
+    </script>
+    
+    <style>
+        /* ===== CSS CUSTOM PROPERTIES (Design Tokens) ===== */
+        :root {
+            /* Color Palette - Light Theme */
+            --color-bg-primary: #ffffff;
+            --color-bg-secondary: #f8fafc;
+            --color-bg-tertiary: #f1f5f9;
+            --color-text-primary: #0f172a;
+            --color-text-secondary: #475569;
+            --color-text-tertiary: #64748b;
+            --color-border: #e2e8f0;
+            --color-border-hover: #cbd5e1;
+            
+            /* Glass morphism backgrounds */
+            --glass-bg: rgba(255, 255, 255, 0.65);
+            --glass-border: rgba(255, 255, 255, 0.2);
+            --glass-shadow: rgba(0, 0, 0, 0.1);
+            
+            /* Accent gradients */
+            --gradient-primary: linear-gradient(135deg, #64748b 0%, #475569 50%, #334155 100%);
+            --gradient-accent: linear-gradient(135deg, #e2e8f0 0%, #cbd5e1 100%);
+            --gradient-spotlight: radial-gradient(circle at 30% 20%, rgba(148, 163, 184, 0.15) 0%, transparent 50%);
+            
+            /* Layout & Spacing */
+            --container-max-width: 1000px;
+            --section-spacing: 80px;
+            --card-radius: 20px;
+            --card-radius-small: 12px;
+            
+            /* Shadows */
+            --shadow-soft: 0 4px 24px rgba(0, 0, 0, 0.06);
+            --shadow-medium: 0 8px 32px rgba(0, 0, 0, 0.12);
+            --shadow-hover: 0 12px 40px rgba(0, 0, 0, 0.15);
+            
+            /* Transitions */
+            --transition-smooth: cubic-bezier(0.22, 1, 0.36, 1);
+            --transition-fast: 200ms var(--transition-smooth);
+            --transition-medium: 350ms var(--transition-smooth);
+        }
+        
+        /* Dark Theme Override */
+        [data-theme="dark"] {
+            --color-bg-primary: #0f172a;
+            --color-bg-secondary: #1e293b;
+            --color-bg-tertiary: #334155;
+            --color-text-primary: #f8fafc;
+            --color-text-secondary: #cbd5e1;
+            --color-text-tertiary: #94a3b8;
+            --color-border: #334155;
+            --color-border-hover: #475569;
+            
+            --glass-bg: rgba(30, 41, 59, 0.4);
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --glass-shadow: rgba(0, 0, 0, 0.3);
+            
+            --gradient-primary: linear-gradient(135deg, #64748b 0%, #94a3b8 50%, #cbd5e1 100%);
+            --gradient-spotlight: radial-gradient(circle at 30% 20%, rgba(100, 116, 139, 0.1) 0%, transparent 50%);
+            
+            --shadow-soft: 0 4px 24px rgba(0, 0, 0, 0.2);
+            --shadow-medium: 0 8px 32px rgba(0, 0, 0, 0.3);
+            --shadow-hover: 0 12px 40px rgba(0, 0, 0, 0.4);
+        }
+        
+        /* ===== RESET & BASE STYLES ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+            line-height: 1.6;
+            color: var(--color-text-primary);
+            background: var(--color-bg-primary);
+            transition: background-color var(--transition-medium), color var(--transition-medium);
+            overflow-x: hidden;
+        }
+        
+        /* ===== LAYOUT CONTAINER ===== */
+        .container {
+            max-width: var(--container-max-width);
+            margin: 0 auto;
+            padding: 0 24px;
+            position: relative;
+        }
+        
+        /* ===== NAVIGATION ===== */
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: var(--glass-bg);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--glass-border);
+            padding: 16px 0;
+            z-index: 50;
+            transition: all var(--transition-fast);
+        }
+
+        .nav-container {
+            max-width: var(--container-max-width);
+            margin: 0 auto;
+            padding: 0 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-brand {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--color-text-primary);
+            text-decoration: none;
+            transition: color var(--transition-fast);
+        }
+
+        .nav-brand:hover,
+        .nav-brand:focus {
+            color: var(--color-text-secondary);
+            outline: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+        }
+
+        .nav-link {
+            color: var(--color-text-secondary);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: color var(--transition-fast);
+            padding: 4px 8px;
+            border-radius: 6px;
+        }
+
+        .nav-link:hover,
+        .nav-link:focus {
+            color: var(--color-text-primary);
+            background: var(--color-bg-tertiary);
+            outline: none;
+        }
+
+        .nav-link.current {
+            color: var(--color-text-primary);
+            background: var(--color-bg-tertiary);
+        }
+
+        /* ===== THEME TOGGLE ===== */
+        .theme-toggle {
+            position: fixed;
+            top: 80px;
+            right: 24px;
+            background: var(--glass-bg);
+            backdrop-filter: blur(12px);
+            border: 1px solid var(--glass-border);
+            border-radius: 50px;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all var(--transition-fast);
+            z-index: 100;
+            box-shadow: var(--shadow-soft);
+        }
+        
+        .theme-toggle:hover {
+            transform: scale(1.05);
+            box-shadow: var(--shadow-medium);
+        }
+        
+        .theme-toggle:focus {
+            outline: 2px solid var(--color-text-secondary);
+            outline-offset: 2px;
+        }
+        
+        .theme-toggle svg {
+            width: 20px;
+            height: 20px;
+            fill: var(--color-text-primary);
+            transition: all var(--transition-fast);
+        }
+        
+        /* ===== MAIN CONTENT ===== */
+        .main-content {
+            padding: 120px 0 var(--section-spacing);
+            position: relative;
+            min-height: 100vh;
+        }
+        
+        .page-header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+        
+        .page-title {
+            font-size: clamp(2rem, 6vw, 3rem);
+            font-weight: 600;
+            color: var(--color-text-primary);
+            margin-bottom: 16px;
+            letter-spacing: -0.01em;
+        }
+        
+        .back-home {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--color-text-secondary);
+            text-decoration: none;
+            font-size: 0.95rem;
+            margin-bottom: 24px;
+            transition: color var(--transition-fast);
+        }
+        
+        .back-home:hover,
+        .back-home:focus {
+            color: var(--color-text-primary);
+            outline: none;
+        }
+        
+        .last-updated {
+            color: var(--color-text-tertiary);
+            font-size: 0.9rem;
+            margin-bottom: 32px;
+        }
+        
+        /* Glass morphism card for content */
+        .content-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(12px);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--card-radius);
+            padding: 48px;
+            box-shadow: var(--shadow-soft);
+            margin-bottom: 32px;
+        }
+        
+        /* ===== TABLE OF CONTENTS ===== */
+        .toc {
+            background: var(--color-bg-secondary);
+            border: 1px solid var(--color-border);
+            border-radius: var(--card-radius-small);
+            padding: 24px;
+            margin-bottom: 48px;
+        }
+        
+        .toc-title {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--color-text-primary);
+            margin-bottom: 16px;
+        }
+        
+        .toc-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .toc-item {
+            margin-bottom: 8px;
+        }
+        
+        .toc-link {
+            color: var(--color-text-secondary);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color var(--transition-fast);
+        }
+        
+        .toc-link:hover,
+        .toc-link:focus {
+            color: var(--color-text-primary);
+            outline: none;
+        }
+        
+        /* ===== TYPOGRAPHY ===== */
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--color-text-primary);
+            margin: 48px 0 24px 0;
+            letter-spacing: -0.01em;
+            scroll-margin-top: 100px;
+        }
+        
+        h2:first-of-type {
+            margin-top: 0;
+        }
+        
+        p {
+            color: var(--color-text-secondary);
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+        
+        ul {
+            margin-left: 24px;
+            margin-bottom: 20px;
+        }
+        
+        li {
+            color: var(--color-text-secondary);
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+        
+        strong {
+            color: var(--color-text-primary);
+        }
+        
+        /* ===== FOOTER ===== */
+        .footer {
+            border-top: 1px solid var(--color-border);
+            padding: 48px 0;
+            text-align: center;
+            margin-top: var(--section-spacing);
+        }
+        
+        .footer-text {
+            color: var(--color-text-tertiary);
+            font-size: 0.875rem;
+            line-height: 1.6;
+        }
+
+        .footer-link {
+            color: var(--color-text-secondary);
+            text-decoration: none;
+            transition: color var(--transition-fast);
+        }
+
+        .footer-link:hover,
+        .footer-link:focus {
+            color: var(--color-text-primary);
+            outline: none;
+        }
+        
+        /* ===== BACK TO TOP BUTTON ===== */
+        .back-to-top {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            background: var(--glass-bg);
+            backdrop-filter: blur(12px);
+            border: 1px solid var(--glass-border);
+            border-radius: 50px;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all var(--transition-fast);
+            z-index: 100;
+            box-shadow: var(--shadow-soft);
+            opacity: 0;
+            transform: translateY(20px);
+            pointer-events: none;
+        }
+        
+        .back-to-top.visible {
+            opacity: 1;
+            transform: translateY(0);
+            pointer-events: all;
+        }
+        
+        .back-to-top:hover {
+            transform: scale(1.05) translateY(-2px);
+            box-shadow: var(--shadow-medium);
+        }
+        
+        .back-to-top:focus {
+            outline: 2px solid var(--color-text-secondary);
+            outline-offset: 2px;
+        }
+        
+        .back-to-top svg {
+            width: 20px;
+            height: 20px;
+            fill: var(--color-text-primary);
+        }
+        
+        /* ===== RESPONSIVE DESIGN ===== */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 20px;
+            }
+            
+            .nav-container {
+                padding: 0 20px;
+            }
+
+            .nav-links {
+                gap: 16px;
+            }
+
+            .nav-link {
+                font-size: 0.9rem;
+            }
+            
+            .content-card {
+                padding: 32px 24px;
+            }
+            
+            .toc {
+                padding: 20px;
+            }
+            
+            .theme-toggle,
+            .back-to-top {
+                top: 72px;
+                right: 16px;
+                width: 44px;
+                height: 44px;
+            }
+            
+            .back-to-top {
+                top: auto;
+                bottom: 16px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 16px;
+            }
+            
+            .content-card {
+                padding: 24px 20px;
+            }
+        }
+        
+        /* ===== ACCESSIBILITY & REDUCED MOTION ===== */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+        }
+        
+        /* Skip Link */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: var(--color-text-primary);
+            color: var(--color-bg-primary);
+            padding: 8px 16px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            z-index: 1000;
+            transition: top var(--transition-fast);
+        }
+        
+        .skip-link:focus {
+            top: 6px;
+            outline: 2px solid var(--color-bg-primary);
+            outline-offset: 2px;
+        }
+
+        /* Focus styles */
+        .content-card:focus {
+            outline: 2px solid var(--color-text-secondary);
+            outline-offset: 4px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip to content link -->
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Navigation -->
+    <nav class="nav" role="navigation">
+        <div class="nav-container">
+            <a href="./index.html" class="nav-brand">ATT Ventures LLC</a>
+            <div class="nav-links">
+                <a href="./index.html" class="nav-link">Home</a>
+                <a href="./privacy.html" class="nav-link">Privacy</a>
+                <a href="./terms.html" class="nav-link current" aria-current="page">Terms</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" aria-label="Toggle dark mode" role="switch">
+        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zM2 13h2a1 1 0 0 0 0-2H2a1 1 0 0 0 0 2zm18 0h2a1 1 0 0 0 0-2h-2a1 1 0 0 0 0 2zM11 2v2a1 1 0 0 0 2 0V2a1 1 0 0 0-2 0zm0 18v2a1 1 0 0 0 2 0v-2a1 1 0 0 0-2 0zM5.99 4.58a1 1 0 0 0-1.41 1.41l1.06 1.06a1 1 0 0 0 1.41-1.41L5.99 4.58zm12.37 12.37a1 1 0 0 0-1.41 1.41l1.06 1.06a1 1 0 0 0 1.41-1.41l-1.06-1.06zm1.06-10.96a1 1 0 0 0-1.41-1.41l-1.06 1.06a1 1 0 0 0 1.41 1.41l1.06-1.06zM7.05 18.36a1 1 0 0 0-1.41-1.41l-1.06 1.06a1 1 0 0 0 1.41 1.41l1.06-1.06z"/>
+        </svg>
+        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="display: none;">
+            <path d="M12.1 22c-5.5 0-10-4.5-10-10 0-5.3 4.1-9.7 9.4-10-.5.6-.9 1.3-1.1 2.1-.4 1.3-.4 2.7.2 4 .6 1.3 1.8 2.3 3.2 2.7 1.4.4 2.9.2 4.2-.6.7-.4 1.3-.9 1.7-1.5C20.6 14.6 16.6 22 12.1 22z"/>
+        </svg>
+    </button>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M12 2l-8 8h5v10h6V10h5z"/>
+        </svg>
+    </button>
+
+    <div class="container">
+        <!-- Main Content -->
+        <main class="main-content" id="main">
+            <div class="page-header">
+                <a href="./index.html" class="back-home">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 11H7.83l4.88-4.88c.39-.39.39-1.03 0-1.42-.39-.39-1.02-.39-1.41 0l-6.59 6.59c-.39.39-.39 1.02 0 1.41l6.59 6.59c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L7.83 13H19c.55 0 1-.45 1-1s-.45-1-1-1z"/>
+                    </svg>
+                    Back to Home
+                </a>
+                <h1 class="page-title">Terms of Service</h1>
+                <p class="last-updated">Last updated: September 13, 2025</p>
+            </div>
+
+            <div class="content-card">
+                <!-- Table of Contents -->
+                <div class="toc">
+                    <h3 class="toc-title">Table of Contents</h3>
+                    <ul class="toc-list">
+                        <li class="toc-item"><a href="#acceptance-of-terms" class="toc-link">1. Acceptance of Terms</a></li>
+                        <li class="toc-item"><a href="#use-of-site" class="toc-link">2. Use of the Site</a></li>
+                        <li class="toc-item"><a href="#products-orders" class="toc-link">3. Products and Orders</a></li>
+                        <li class="toc-item"><a href="#payments-taxes" class="toc-link">4. Payments & Taxes</a></li>
+                        <li class="toc-item"><a href="#shipping-returns-refunds" class="toc-link">5. Shipping, Returns & Refunds</a></li>
+                        <li class="toc-item"><a href="#intellectual-property" class="toc-link">6. Intellectual Property</a></li>
+                        <li class="toc-item"><a href="#third-party-links" class="toc-link">7. Third-Party Links & Services</a></li>
+                        <li class="toc-item"><a href="#disclaimers" class="toc-link">8. Disclaimers</a></li>
+                        <li class="toc-item"><a href="#limitation-of-liability" class="toc-link">9. Limitation of Liability</a></li>
+                        <li class="toc-item"><a href="#indemnification" class="toc-link">10. Indemnification</a></li>
+                        <li class="toc-item"><a href="#governing-law" class="toc-link">11. Governing Law & Dispute Resolution</a></li>
+                        <li class="toc-item"><a href="#changes-to-terms" class="toc-link">12. Changes to the Terms</a></li>
+                        <li class="toc-item"><a href="#contact" class="toc-link">13. Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Content Sections -->
+                <h2 id="acceptance-of-terms">1. Acceptance of Terms</h2>
+                <p>By accessing or using our website or any of our retail brands, you agree to be bound by these Terms of Service and all applicable laws and regulations. If you do not agree with any of these terms, you are prohibited from using or accessing our services.</p>
+
+                <h2 id="use-of-site">2. Use of the Site</h2>
+                <p>You may use our website for lawful purposes only. You agree not to use the site:</p>
+                <ul>
+                    <li>In any way that violates any applicable federal, state, local, or international law or regulation</li>
+                    <li>To engage in any conduct that restricts or inhibits anyone's use or enjoyment of the website</li>
+                    <li>To attempt to gain unauthorized access to, interfere with, damage, or disrupt any parts of the website</li>
+                    <li>For any automated data collection activities (such as scraping, data mining, or similar techniques)</li>
+                </ul>
+
+                <h2 id="products-orders">3. Products and Orders</h2>
+                <p>When you place an order through our website or retail brands, you are making an offer to purchase the products. We reserve the right to refuse or cancel any order for any reason. Prices and availability of products are subject to change without notice.</p>
+
+                <h2 id="payments-taxes">4. Payments & Taxes</h2>
+                <p>Payments for purchases are processed through third-party payment processors such as Shopify, Stripe, or PayPal. By placing an order, you authorize us and our payment processors to charge your selected payment method for the total amount of your purchase. You are responsible for all applicable taxes related to your purchases.</p>
+
+                <h2 id="shipping-returns-refunds">5. Shipping, Returns & Refunds</h2>
+                <p>Each of our retail brands may have its own shipping, returns, and refunds policy. Please refer to the specific policy displayed on each brand's website. For questions about returns or refunds, you may also contact us at <a href="mailto:info@attventuresllc.com" class="footer-link" rel="noopener">info@attventuresllc.com</a>.</p>
+
+                <h2 id="intellectual-property">6. Intellectual Property</h2>
+                <p>The content, trademarks, service marks, and other materials on our website are owned by ATT Ventures LLC or our licensors and are protected by copyright, trademark, and other intellectual property laws. We grant you a limited, non-exclusive, non-transferable license to access and use our website for personal, non-commercial purposes. You may not copy, modify, distribute, sell, or lease any part of our services or included software, nor may you reverse engineer or attempt to extract the source code of that software, unless laws prohibit these restrictions or you have our written permission.</p>
+
+                <h2 id="third-party-links">7. Third-Party Links & Services</h2>
+                <p>Our website may contain links to third-party websites or services that are not owned or controlled by ATT Ventures LLC. We have no control over, and assume no responsibility for, the content, privacy policies, or practices of any third-party websites or services. You acknowledge and agree that we shall not be responsible or liable for any damage or loss caused by your use of any such third-party services.</p>
+
+                <h2 id="disclaimers">8. Disclaimers</h2>
+                <p>Our website and services are provided on an "as is" and "as available" basis. To the fullest extent permitted by law, we disclaim all warranties, express or implied, including but not limited to implied warranties of merchantability, fitness for a particular purpose, and non-infringement.</p>
+
+                <h2 id="limitation-of-liability">9. Limitation of Liability</h2>
+                <p>To the extent permitted by applicable law, ATT Ventures LLC shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly, or any loss of data, use, goodwill, or other intangible losses. Our total liability to you for any claims arising out of or relating to these Terms or our services shall not exceed the greater of $100 or the amount you paid us in the three (3) months immediately preceding the relevant claim.</p>
+
+                <h2 id="indemnification">10. Indemnification</h2>
+                <p>You agree to defend, indemnify, and hold harmless ATT Ventures LLC and its officers, directors, employees, and agents from and against any claims, damages, obligations, losses, liabilities, costs, and expenses (including attorney's fees) arising from your use of our services or your violation of these Terms.</p>
+
+                <h2 id="governing-law">11. Governing Law & Dispute Resolution</h2>
+                <p>These Terms shall be governed by and construed in accordance with the laws of the State of Wyoming, without regard to its conflict of law principles. You agree that any legal action or proceeding between you and ATT Ventures LLC for any purpose concerning these Terms or our services shall be brought exclusively in the federal or state courts located in Wyoming, and you consent to the jurisdiction of those courts.</p>
+
+                <h2 id="changes-to-terms">12. Changes to the Terms</h2>
+                <p>We reserve the right to modify or replace these Terms at any time. If we make material changes, we will post the updated Terms on this page and update the "Last updated" date. Your continued use of our services after any such changes constitutes your acceptance of the new Terms.</p>
+
+                <h2 id="contact">13. Contact</h2>
+                <p>If you have any questions about these Terms of Service, please contact us:</p>
+                <p>
+                    <strong>ATT Ventures LLC</strong><br>
+                    Email: <a href="mailto:info@attventuresllc.com" class="footer-link" rel="noopener">info@attventuresllc.com</a>
+                </p>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer" role="contentinfo">
+            <p class="footer-text">
+                © 2025 ATT Ventures LLC • Sheridan, Wyoming • 
+                <a href="mailto:info@attventuresllc.com" class="footer-link" rel="noopener">info@attventuresllc.com</a> • 
+                <a href="./privacy.html" class="footer-link">Privacy Policy</a> • 
+                <a href="./terms.html" class="footer-link">Terms of Service</a>
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        // ===== THEME TOGGLE FUNCTIONALITY =====
+        (function() {
+            'use strict';
+            
+            const themeToggle = document.querySelector('.theme-toggle');
+            const sunIcon = document.querySelector('.sun-icon');
+            const moonIcon = document.querySelector('.moon-icon');
+            const html = document.documentElement;
+            
+            // Check for saved theme preference or default to 'light' mode
+            const currentTheme = localStorage.getItem('theme') || 
+                                (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+            
+            // Apply the current theme
+            function applyTheme(theme) {
+                html.setAttribute('data-theme', theme);
+                
+                if (theme === 'dark') {
+                    sunIcon.style.display = 'none';
+                    moonIcon.style.display = 'block';
+                    themeToggle.setAttribute('aria-label', 'Switch to light mode');
+                } else {
+                    sunIcon.style.display = 'block';
+                    moonIcon.style.display = 'none';
+                    themeToggle.setAttribute('aria-label', 'Switch to dark mode');
+                }
+            }
+            
+            // Initialize theme
+            applyTheme(currentTheme);
+            
+            // Theme toggle click handler
+            themeToggle.addEventListener('click', function() {
+                const currentTheme = html.getAttribute('data-theme');
+                const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+                
+                applyTheme(newTheme);
+                localStorage.setItem('theme', newTheme);
+            });
+            
+            // Keyboard accessibility for theme toggle
+            themeToggle.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    themeToggle.click();
+                }
+            });
+            
+            // Listen for system theme changes
+            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
+                if (!localStorage.getItem('theme')) {
+                    applyTheme(e.matches ? 'dark' : 'light');
+                }
+            });
+        })();
+
+        // ===== BACK TO TOP FUNCTIONALITY =====
+        (function() {
+            'use strict';
+            
+            const backToTop = document.querySelector('.back-to-top');
+            
+            // Show/hide back to top button based on scroll position
+            function toggleBackToTop() {
+                if (window.pageYOffset > 300) {
+                    backToTop.classList.add('visible');
+                } else {
+                    backToTop.classList.remove('visible');
+                }
+            }
+            
+            // Scroll to top smoothly
+            function scrollToTop() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            }
+            
+            // Event listeners
+            window.addEventListener('scroll', toggleBackToTop);
+            backToTop.addEventListener('click', scrollToTop);
+            
+            // Keyboard accessibility
+            backToTop.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    scrollToTop();
+                }
+            });
+        })();
+    </script>
+</body>
+</html>

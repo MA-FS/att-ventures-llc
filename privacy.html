@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — ATT Ventures LLC</title>
+    <meta name="description" content="Privacy Policy for ATT Ventures LLC. Learn how we collect, use, and protect your personal information when you visit our website or use our services.">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://attventuresllc.com/privacy.html">
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#0f172a">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Privacy Policy — ATT Ventures LLC">
+    <meta property="og:description" content="Privacy Policy for ATT Ventures LLC. Learn how we collect, use, and protect your personal information.">
+    <meta property="og:url" content="https://attventuresllc.com/privacy.html">
+    
+    <!-- Favicon (inline SVG data URL) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23374151'><path d='M12 2L1 21h22L12 2zm0 4.2L19.6 19H4.4L12 6.2z'/></svg>">
+    
+    <!-- JSON-LD Organization Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "ATT Ventures LLC",
+      "url": "https://attventuresllc.com/",
+      "email": "info@attventuresllc.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Sheridan",
+        "addressRegion": "WY",
+        "addressCountry": "US"
+      },
+      "sameAs": []
+    }
+    </script>
+    
+    <style>
+        /* ===== CSS CUSTOM PROPERTIES (Design Tokens) ===== */
+        :root {
+            /* Color Palette - Light Theme */
+            --color-bg-primary: #ffffff;
+            --color-bg-secondary: #f8fafc;
+            --color-bg-tertiary: #f1f5f9;
+            --color-text-primary: #0f172a;
+            --color-text-secondary: #475569;
+            --color-text-tertiary: #64748b;
+            --color-border: #e2e8f0;
+            --color-border-hover: #cbd5e1;
+            
+            /* Glass morphism backgrounds */
+            --glass-bg: rgba(255, 255, 255, 0.65);
+            --glass-border: rgba(255, 255, 255, 0.2);
+            --glass-shadow: rgba(0, 0, 0, 0.1);
+            
+            /* Accent gradients */
+            --gradient-primary: linear-gradient(135deg, #64748b 0%, #475569 50%, #334155 100%);
+            --gradient-accent: linear-gradient(135deg, #e2e8f0 0%, #cbd5e1 100%);
+            --gradient-spotlight: radial-gradient(circle at 30% 20%, rgba(148, 163, 184, 0.15) 0%, transparent 50%);
+            
+            /* Layout & Spacing */
+            --container-max-width: 1000px;
+            --section-spacing: 80px;
+            --card-radius: 20px;
+            --card-radius-small: 12px;
+            
+            /* Shadows */
+            --shadow-soft: 0 4px 24px rgba(0, 0, 0, 0.06);
+            --shadow-medium: 0 8px 32px rgba(0, 0, 0, 0.12);
+            --shadow-hover: 0 12px 40px rgba(0, 0, 0, 0.15);
+            
+            /* Transitions */
+            --transition-smooth: cubic-bezier(0.22, 1, 0.36, 1);
+            --transition-fast: 200ms var(--transition-smooth);
+            --transition-medium: 350ms var(--transition-smooth);
+        }
+        
+        /* Dark Theme Override */
+        [data-theme="dark"] {
+            --color-bg-primary: #0f172a;
+            --color-bg-secondary: #1e293b;
+            --color-bg-tertiary: #334155;
+            --color-text-primary: #f8fafc;
+            --color-text-secondary: #cbd5e1;
+            --color-text-tertiary: #94a3b8;
+            --color-border: #334155;
+            --color-border-hover: #475569;
+            
+            --glass-bg: rgba(30, 41, 59, 0.4);
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --glass-shadow: rgba(0, 0, 0, 0.3);
+            
+            --gradient-primary: linear-gradient(135deg, #64748b 0%, #94a3b8 50%, #cbd5e1 100%);
+            --gradient-spotlight: radial-gradient(circle at 30% 20%, rgba(100, 116, 139, 0.1) 0%, transparent 50%);
+            
+            --shadow-soft: 0 4px 24px rgba(0, 0, 0, 0.2);
+            --shadow-medium: 0 8px 32px rgba(0, 0, 0, 0.3);
+            --shadow-hover: 0 12px 40px rgba(0, 0, 0, 0.4);
+        }
+        
+        /* ===== RESET & BASE STYLES ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+            line-height: 1.6;
+            color: var(--color-text-primary);
+            background: var(--color-bg-primary);
+            transition: background-color var(--transition-medium), color var(--transition-medium);
+            overflow-x: hidden;
+        }
+        
+        /* ===== LAYOUT CONTAINER ===== */
+        .container {
+            max-width: var(--container-max-width);
+            margin: 0 auto;
+            padding: 0 24px;
+            position: relative;
+        }
+        
+        /* ===== NAVIGATION ===== */
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: var(--glass-bg);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--glass-border);
+            padding: 16px 0;
+            z-index: 50;
+            transition: all var(--transition-fast);
+        }
+
+        .nav-container {
+            max-width: var(--container-max-width);
+            margin: 0 auto;
+            padding: 0 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-brand {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--color-text-primary);
+            text-decoration: none;
+            transition: color var(--transition-fast);
+        }
+
+        .nav-brand:hover,
+        .nav-brand:focus {
+            color: var(--color-text-secondary);
+            outline: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+        }
+
+        .nav-link {
+            color: var(--color-text-secondary);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: color var(--transition-fast);
+            padding: 4px 8px;
+            border-radius: 6px;
+        }
+
+        .nav-link:hover,
+        .nav-link:focus {
+            color: var(--color-text-primary);
+            background: var(--color-bg-tertiary);
+            outline: none;
+        }
+
+        .nav-link.current {
+            color: var(--color-text-primary);
+            background: var(--color-bg-tertiary);
+        }
+
+        /* ===== THEME TOGGLE ===== */
+        .theme-toggle {
+            position: fixed;
+            top: 80px;
+            right: 24px;
+            background: var(--glass-bg);
+            backdrop-filter: blur(12px);
+            border: 1px solid var(--glass-border);
+            border-radius: 50px;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all var(--transition-fast);
+            z-index: 100;
+            box-shadow: var(--shadow-soft);
+        }
+        
+        .theme-toggle:hover {
+            transform: scale(1.05);
+            box-shadow: var(--shadow-medium);
+        }
+        
+        .theme-toggle:focus {
+            outline: 2px solid var(--color-text-secondary);
+            outline-offset: 2px;
+        }
+        
+        .theme-toggle svg {
+            width: 20px;
+            height: 20px;
+            fill: var(--color-text-primary);
+            transition: all var(--transition-fast);
+        }
+        
+        /* ===== MAIN CONTENT ===== */
+        .main-content {
+            padding: 120px 0 var(--section-spacing);
+            position: relative;
+            min-height: 100vh;
+        }
+        
+        .page-header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+        
+        .page-title {
+            font-size: clamp(2rem, 6vw, 3rem);
+            font-weight: 600;
+            color: var(--color-text-primary);
+            margin-bottom: 16px;
+            letter-spacing: -0.01em;
+        }
+        
+        .back-home {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--color-text-secondary);
+            text-decoration: none;
+            font-size: 0.95rem;
+            margin-bottom: 24px;
+            transition: color var(--transition-fast);
+        }
+        
+        .back-home:hover,
+        .back-home:focus {
+            color: var(--color-text-primary);
+            outline: none;
+        }
+        
+        .last-updated {
+            color: var(--color-text-tertiary);
+            font-size: 0.9rem;
+            margin-bottom: 32px;
+        }
+        
+        /* Glass morphism card for content */
+        .content-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(12px);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--card-radius);
+            padding: 48px;
+            box-shadow: var(--shadow-soft);
+            margin-bottom: 32px;
+        }
+        
+        /* ===== TABLE OF CONTENTS ===== */
+        .toc {
+            background: var(--color-bg-secondary);
+            border: 1px solid var(--color-border);
+            border-radius: var(--card-radius-small);
+            padding: 24px;
+            margin-bottom: 48px;
+        }
+        
+        .toc-title {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--color-text-primary);
+            margin-bottom: 16px;
+        }
+        
+        .toc-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .toc-item {
+            margin-bottom: 8px;
+        }
+        
+        .toc-link {
+            color: var(--color-text-secondary);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color var(--transition-fast);
+        }
+        
+        .toc-link:hover,
+        .toc-link:focus {
+            color: var(--color-text-primary);
+            outline: none;
+        }
+        
+        /* ===== TYPOGRAPHY ===== */
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--color-text-primary);
+            margin: 48px 0 24px 0;
+            letter-spacing: -0.01em;
+            scroll-margin-top: 100px;
+        }
+        
+        h2:first-of-type {
+            margin-top: 0;
+        }
+        
+        p {
+            color: var(--color-text-secondary);
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+        
+        ul {
+            margin-left: 24px;
+            margin-bottom: 20px;
+        }
+        
+        li {
+            color: var(--color-text-secondary);
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+        
+        strong {
+            color: var(--color-text-primary);
+        }
+        
+        /* ===== FOOTER ===== */
+        .footer {
+            border-top: 1px solid var(--color-border);
+            padding: 48px 0;
+            text-align: center;
+            margin-top: var(--section-spacing);
+        }
+        
+        .footer-text {
+            color: var(--color-text-tertiary);
+            font-size: 0.875rem;
+            line-height: 1.6;
+        }
+
+        .footer-link {
+            color: var(--color-text-secondary);
+            text-decoration: none;
+            transition: color var(--transition-fast);
+        }
+
+        .footer-link:hover,
+        .footer-link:focus {
+            color: var(--color-text-primary);
+            outline: none;
+        }
+        
+        /* ===== BACK TO TOP BUTTON ===== */
+        .back-to-top {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            background: var(--glass-bg);
+            backdrop-filter: blur(12px);
+            border: 1px solid var(--glass-border);
+            border-radius: 50px;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all var(--transition-fast);
+            z-index: 100;
+            box-shadow: var(--shadow-soft);
+            opacity: 0;
+            transform: translateY(20px);
+            pointer-events: none;
+        }
+        
+        .back-to-top.visible {
+            opacity: 1;
+            transform: translateY(0);
+            pointer-events: all;
+        }
+        
+        .back-to-top:hover {
+            transform: scale(1.05) translateY(-2px);
+            box-shadow: var(--shadow-medium);
+        }
+        
+        .back-to-top:focus {
+            outline: 2px solid var(--color-text-secondary);
+            outline-offset: 2px;
+        }
+        
+        .back-to-top svg {
+            width: 20px;
+            height: 20px;
+            fill: var(--color-text-primary);
+        }
+        
+        /* ===== RESPONSIVE DESIGN ===== */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 20px;
+            }
+            
+            .nav-container {
+                padding: 0 20px;
+            }
+
+            .nav-links {
+                gap: 16px;
+            }
+
+            .nav-link {
+                font-size: 0.9rem;
+            }
+            
+            .content-card {
+                padding: 32px 24px;
+            }
+            
+            .toc {
+                padding: 20px;
+            }
+            
+            .theme-toggle,
+            .back-to-top {
+                top: 72px;
+                right: 16px;
+                width: 44px;
+                height: 44px;
+            }
+            
+            .back-to-top {
+                top: auto;
+                bottom: 16px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 16px;
+            }
+            
+            .content-card {
+                padding: 24px 20px;
+            }
+        }
+        
+        /* ===== ACCESSIBILITY & REDUCED MOTION ===== */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+        }
+        
+        /* Skip Link */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: var(--color-text-primary);
+            color: var(--color-bg-primary);
+            padding: 8px 16px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            z-index: 1000;
+            transition: top var(--transition-fast);
+        }
+        
+        .skip-link:focus {
+            top: 6px;
+            outline: 2px solid var(--color-bg-primary);
+            outline-offset: 2px;
+        }
+
+        /* Focus styles */
+        .content-card:focus {
+            outline: 2px solid var(--color-text-secondary);
+            outline-offset: 4px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip to content link -->
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Navigation -->
+    <nav class="nav" role="navigation">
+        <div class="nav-container">
+            <a href="./index.html" class="nav-brand">ATT Ventures LLC</a>
+            <div class="nav-links">
+                <a href="./index.html" class="nav-link">Home</a>
+                <a href="./privacy.html" class="nav-link current" aria-current="page">Privacy</a>
+                <a href="./terms.html" class="nav-link">Terms</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" aria-label="Toggle dark mode" role="switch">
+        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zM2 13h2a1 1 0 0 0 0-2H2a1 1 0 0 0 0 2zm18 0h2a1 1 0 0 0 0-2h-2a1 1 0 0 0 0 2zM11 2v2a1 1 0 0 0 2 0V2a1 1 0 0 0-2 0zm0 18v2a1 1 0 0 0 2 0v-2a1 1 0 0 0-2 0zM5.99 4.58a1 1 0 0 0-1.41 1.41l1.06 1.06a1 1 0 0 0 1.41-1.41L5.99 4.58zm12.37 12.37a1 1 0 0 0-1.41 1.41l1.06 1.06a1 1 0 0 0 1.41-1.41l-1.06-1.06zm1.06-10.96a1 1 0 0 0-1.41-1.41l-1.06 1.06a1 1 0 0 0 1.41 1.41l1.06-1.06zM7.05 18.36a1 1 0 0 0-1.41-1.41l-1.06 1.06a1 1 0 0 0 1.41 1.41l1.06-1.06z"/>
+        </svg>
+        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="display: none;">
+            <path d="M12.1 22c-5.5 0-10-4.5-10-10 0-5.3 4.1-9.7 9.4-10-.5.6-.9 1.3-1.1 2.1-.4 1.3-.4 2.7.2 4 .6 1.3 1.8 2.3 3.2 2.7 1.4.4 2.9.2 4.2-.6.7-.4 1.3-.9 1.7-1.5C20.6 14.6 16.6 22 12.1 22z"/>
+        </svg>
+    </button>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M12 2l-8 8h5v10h6V10h5z"/>
+        </svg>
+    </button>
+
+    <div class="container">
+        <!-- Main Content -->
+        <main class="main-content" id="main">
+            <div class="page-header">
+                <a href="./index.html" class="back-home">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 11H7.83l4.88-4.88c.39-.39.39-1.03 0-1.42-.39-.39-1.02-.39-1.41 0l-6.59 6.59c-.39.39-.39 1.02 0 1.41l6.59 6.59c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L7.83 13H19c.55 0 1-.45 1-1s-.45-1-1-1z"/>
+                    </svg>
+                    Back to Home
+                </a>
+                <h1 class="page-title">Privacy Policy</h1>
+                <p class="last-updated">Last updated: September 13, 2025</p>
+            </div>
+
+            <div class="content-card">
+                <!-- Table of Contents -->
+                <div class="toc">
+                    <h3 class="toc-title">Table of Contents</h3>
+                    <ul class="toc-list">
+                        <li class="toc-item"><a href="#introduction" class="toc-link">1. Introduction</a></li>
+                        <li class="toc-item"><a href="#information-we-collect" class="toc-link">2. Information We Collect</a></li>
+                        <li class="toc-item"><a href="#how-we-use-information" class="toc-link">3. How We Use Information</a></li>
+                        <li class="toc-item"><a href="#sharing-of-information" class="toc-link">4. Sharing of Information</a></li>
+                        <li class="toc-item"><a href="#cookies-tracking" class="toc-link">5. Cookies & Tracking</a></li>
+                        <li class="toc-item"><a href="#data-retention" class="toc-link">6. Data Retention</a></li>
+                        <li class="toc-item"><a href="#security" class="toc-link">7. Security</a></li>
+                        <li class="toc-item"><a href="#your-rights" class="toc-link">8. Your Rights</a></li>
+                        <li class="toc-item"><a href="#changes-to-policy" class="toc-link">9. Changes to This Policy</a></li>
+                        <li class="toc-item"><a href="#contact-us" class="toc-link">10. Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Content Sections -->
+                <h2 id="introduction">1. Introduction</h2>
+                <p>ATT Ventures LLC (<strong>"we"</strong>, <strong>"our"</strong>, or <strong>"us"</strong>) respects your privacy and is committed to protecting your personal information. This Privacy Policy explains our practices regarding the collection, use, and disclosure of information when you visit our website or interact with our services.</p>
+
+                <h2 id="information-we-collect">2. Information We Collect</h2>
+                
+                <p><strong>Basic Contact Information:</strong> We may collect your email address and other contact details when you contact us directly through our website or email.</p>
+                
+                <p><strong>Automatically Collected Data:</strong> When you visit our website, we may automatically collect certain information about your browser, device, and usage patterns. This may include IP addresses, browser type, operating system, pages visited, and analytics data through cookies or similar technologies.</p>
+                
+                <p><strong>Transactional Information:</strong> For purchases made through our Shopify-based retail brands, we collect information necessary to process transactions, including billing and shipping details.</p>
+                
+                <p><strong>Children's Privacy:</strong> We do not knowingly collect personal information from children under 13 years of age. If we become aware that we have collected such information, we will take steps to delete it promptly.</p>
+
+                <h2 id="how-we-use-information">3. How We Use Information</h2>
+                <p>We use the information we collect to:</p>
+                <ul>
+                    <li>Provide and improve our services</li>
+                    <li>Communicate with you regarding inquiries or transactions</li>
+                    <li>Enhance our website functionality and user experience</li>
+                    <li>Comply with legal obligations</li>
+                </ul>
+                <p><strong>We do NOT sell your personal information to third parties.</strong></p>
+
+                <h2 id="sharing-of-information">4. Sharing of Information</h2>
+                <p>We may share your information in the following circumstances:</p>
+                <ul>
+                    <li><strong>Service Providers:</strong> With trusted third-party service providers who assist us with payment processing, analytics, website hosting, and other business operations</li>
+                    <li><strong>Legal Requirements:</strong> When required by law, regulation, or legal process</li>
+                    <li><strong>Business Transfers:</strong> In connection with any merger, sale of assets, or other business transaction</li>
+                </ul>
+
+                <h2 id="cookies-tracking">5. Cookies & Tracking</h2>
+                <p>Our website may use cookies and similar tracking technologies to enhance your browsing experience and collect analytics data. You can disable cookies in your browser settings, though this may limit some website functionality.</p>
+
+                <h2 id="data-retention">6. Data Retention</h2>
+                <p>We retain your personal information only for as long as necessary to fulfill the purposes outlined in this Privacy Policy or as required by applicable law.</p>
+
+                <h2 id="security">7. Security</h2>
+                <p>We implement reasonable technical and organizational safeguards to protect your personal information. However, no method of transmission over the internet or electronic storage is 100% secure.</p>
+
+                <h2 id="your-rights">8. Your Rights</h2>
+                <p>Depending on your location, you may have certain rights regarding your personal information, including:</p>
+                <ul>
+                    <li>Right to access and review your personal data</li>
+                    <li>Right to correct inaccurate information</li>
+                    <li>Right to request deletion of your data</li>
+                    <li>Right to restrict or object to certain processing</li>
+                    <li>Right to opt-out of marketing communications</li>
+                </ul>
+                <p>To exercise these rights, please contact us at <strong>info@attventuresllc.com</strong>.</p>
+
+                <h2 id="changes-to-policy">9. Changes to This Policy</h2>
+                <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with a revised "Last updated" date. We encourage you to review this policy periodically.</p>
+
+                <h2 id="contact-us">10. Contact Us</h2>
+                <p>If you have any questions about this Privacy Policy or our privacy practices, please contact us:</p>
+                <p>
+                    <strong>ATT Ventures LLC</strong><br>
+                    Sheridan, Wyoming, USA<br>
+                    Email: <a href="mailto:info@attventuresllc.com" class="footer-link" rel="noopener">info@attventuresllc.com</a>
+                </p>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer" role="contentinfo">
+            <p class="footer-text">
+                © 2025 ATT Ventures LLC • Sheridan, Wyoming • 
+                <a href="mailto:info@attventuresllc.com" class="footer-link" rel="noopener">info@attventuresllc.com</a> • 
+                <a href="./privacy.html" class="footer-link">Privacy Policy</a> • 
+                <a href="./terms.html" class="footer-link">Terms of Service</a>
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        // ===== THEME TOGGLE FUNCTIONALITY =====
+        (function() {
+            'use strict';
+            
+            const themeToggle = document.querySelector('.theme-toggle');
+            const sunIcon = document.querySelector('.sun-icon');
+            const moonIcon = document.querySelector('.moon-icon');
+            const html = document.documentElement;
+            
+            // Check for saved theme preference or default to 'light' mode
+            const currentTheme = localStorage.getItem('theme') || 
+                                (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+            
+            // Apply the current theme
+            function applyTheme(theme) {
+                html.setAttribute('data-theme', theme);
+                
+                if (theme === 'dark') {
+                    sunIcon.style.display = 'none';
+                    moonIcon.style.display = 'block';
+                    themeToggle.setAttribute('aria-label', 'Switch to light mode');
+                } else {
+                    sunIcon.style.display = 'block';
+                    moonIcon.style.display = 'none';
+                    themeToggle.setAttribute('aria-label', 'Switch to dark mode');
+                }
+            }
+            
+            // Initialize theme
+            applyTheme(currentTheme);
+            
+            // Theme toggle click handler
+            themeToggle.addEventListener('click', function() {
+                const currentTheme = html.getAttribute('data-theme');
+                const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+                
+                applyTheme(newTheme);
+                localStorage.setItem('theme', newTheme);
+            });
+            
+            // Keyboard accessibility for theme toggle
+            themeToggle.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    themeToggle.click();
+                }
+            });
+            
+            // Listen for system theme changes
+            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
+                if (!localStorage.getItem('theme')) {
+                    applyTheme(e.matches ? 'dark' : 'light');
+                }
+            });
+        })();
+
+        // ===== BACK TO TOP FUNCTIONALITY =====
+        (function() {
+            'use strict';
+            
+            const backToTop = document.querySelector('.back-to-top');
+            
+            // Show/hide back to top button based on scroll position
+            function toggleBackToTop() {
+                if (window.pageYOffset > 300) {
+                    backToTop.classList.add('visible');
+                } else {
+                    backToTop.classList.remove('visible');
+                }
+            }
+            
+            // Scroll to top smoothly
+            function scrollToTop() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            }
+            
+            // Event listeners
+            window.addEventListener('scroll', toggleBackToTop);
+            backToTop.addEventListener('click', scrollToTop);
+            
+            // Keyboard accessibility
+            backToTop.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    scrollToTop();
+                }
+            });
+        })();
+    </script>
+</body>
+</html>
